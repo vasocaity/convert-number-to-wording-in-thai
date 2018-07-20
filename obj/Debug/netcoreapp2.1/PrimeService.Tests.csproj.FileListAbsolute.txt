@@ -1,0 +1,17 @@
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.csprojAssemblyReference.cache
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.csproj.CoreCompileInputs.cache
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.AssemblyInfoInputs.cache
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.AssemblyInfo.cs
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.Tests.deps.json
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.Tests.runtimeconfig.json
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.Tests.runtimeconfig.dev.json
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.Tests.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.Tests.pdb
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/bin/Debug/netcoreapp2.1/PrimeService.pdb
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.csproj.CopyComplete
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.dll
+/Users/varaphon.maensiri/Documents/robot/kata/unit-testing-using-dotnet-test/PrimeService.Tests/obj/Debug/netcoreapp2.1/PrimeService.Tests.pdb
