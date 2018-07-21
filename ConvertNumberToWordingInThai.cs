@@ -6,38 +6,40 @@ namespace PrimeService.Tests
     public class NumberThai
     {
         string[] digit_1 = { "หนึ่ง", "สอง", "สาม", "สี่", "ห้า", "หก", "เจ็ด", "แปด", "เก้า", "สิบ" };
-        string[] digit_2 = { "เอ็ด", "ยี่", "" };
         public string convertToThai(int number)
         {
-            return convertUnit(number) + convertDigit2(number);
-        }
-
-        public string convertUnit(int number)
-        {
-            string thai_number = "";
-            if (number == 1)
-            {
-                return digit_1[0];
-            }
-            if ((number / 10) == 0)
-            {
-                thai_number = digit_1[number - 1];
-            }
-            return thai_number;
-        }
-        public string convertDigit2(int number)
-        {
             string result = "";
-            int temp = number % 10;
-            int d2 = number / 10;
-            if (number == 10) return digit_1[9];
-            if (number == 20) return "ยี่สิบ";
-            if (number % 10 == 0 && number != 10)
+            int firstDigit = number / 10;
+            int secondDigit = number % 10;
+
+            if (firstDigit == 10) return "หนึ่งร้อย";
+            if (firstDigit == 0)
             {
-                result = number != 20 ? digit_1[d2 - 1] : digit_2[1];
-                return result + digit_1[9];
+                return digit_1[number - 1];
+            }
+            else if (firstDigit == 1)
+            {
+                result = convertSecondDigit(secondDigit);
+                return result;
+            }
+            else if (firstDigit >= 2)
+            {
+                result = (firstDigit == 2 ? "ยี่" : digit_1[firstDigit - 1]);
+                result += convertSecondDigit(secondDigit);
+                return result;
             }
             return result;
+        }
+
+        public string convertSecondDigit(int secondDigit)
+        {
+            string result = "";
+            if (secondDigit != 0)
+            {
+                result += "สิบ" + (secondDigit == 1 ? "เอ็ด" : digit_1[secondDigit-1]);
+                return result;
+            }
+            return "สิบ";
         }
     }
     public class ConvertNumberToWordingInThai
@@ -53,17 +55,19 @@ namespace PrimeService.Tests
             Assert.Equal(result.convertToThai(5), "ห้า");
             Assert.Equal(result.convertToThai(9), "เก้า");
             Assert.Equal(result.convertToThai(10), "สิบ");
-            //Assert.Equal(result.convertToThai(11), "สิบเอ็ด");
-            // Assert.Equal(result.convertToThai(15), "สิบห้า");
-            // Assert.Equal(result.convertToThai(18), "สิบแปด");
+            Assert.Equal(result.convertToThai(11), "สิบเอ็ด");
+            Assert.Equal(result.convertToThai(15), "สิบห้า");
+            Assert.Equal(result.convertToThai(18), "สิบแปด");
             Assert.Equal(result.convertToThai(20), "ยี่สิบ");
-            // Assert.Equal(result.convertToThai(21), "ยี่สิบเอ็ด");
-            // Assert.Equal(result.convertToThai(25), "ยี่สิบห้า");
+            Assert.Equal(result.convertToThai(21), "ยี่สิบเอ็ด");
+            Assert.Equal(result.convertToThai(22), "ยี่สิบสอง");
+            Assert.Equal(result.convertToThai(25), "ยี่สิบห้า");
             Assert.Equal(result.convertToThai(50), "ห้าสิบ");
-            // Assert.Equal(result.convertToThai(55), "ห้าสิบห้า");
-            // Assert.Equal(result.convertToThai(71), "เจ็ดสิบเอ็ด");
-            // Assert.Equal(result.convertToThai(99), "เก้าสิบเก้า");
-            // Assert.Equal(result.convertToThai(100), "หนึ่งร้อย");
+            Assert.Equal(result.convertToThai(55), "ห้าสิบห้า");
+            Assert.Equal(result.convertToThai(71), "เจ็ดสิบเอ็ด");
+            Assert.Equal(result.convertToThai(99), "เก้าสิบเก้า");
+            Assert.Equal(result.convertToThai(91), "เก้าสิบเอ็ด");
+            Assert.Equal(result.convertToThai(100), "หนึ่งร้อย");
         }
     }
 }
